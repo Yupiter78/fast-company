@@ -51,7 +51,7 @@ const Users = () => {
 
   const renderPhrase = (number) => {
     const exceptions = ['2', '3' ,'4'];
-    return exceptions.includes(number.toString().substr(-1)) ?
+    return exceptions.includes(number.toString().substr(-1, 1)) && number.toString().substr(-2, 1) !== '1' ?
       'человека тусанут' : 'человек тусанёт';
   }
 
