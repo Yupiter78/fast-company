@@ -114,6 +114,7 @@ const users = [
         rate: 5
     },
 ]
+
 export function fetchAll() {
     return users
 }
