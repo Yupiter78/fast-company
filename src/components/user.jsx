@@ -16,7 +16,7 @@ const User = ({
     <tr key={_id}>
       <th scope="row">{name}</th>
       <td>
-        <Qualitie qualities={qualities} id={_id} />
+        <Qualitie qualities={qualities} />
       </td>
       <td>{profession.name}</td>
       <td>{completedMeetings}</td>
