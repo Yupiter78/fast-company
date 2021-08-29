@@ -6,7 +6,7 @@ const Qualitie = ({ qualities }) => {
       {quality.name}
     </span>
   ));
-  return <div>{spanElem}</div>;
+  return <>{spanElem}</>;
 };
 
 export default Qualitie;

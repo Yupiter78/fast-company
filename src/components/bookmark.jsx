@@ -10,12 +10,12 @@ const BookMark = ({ status, onToggleBookMark, id }) => {
   };
 
   return (
-    <div>
+    <>
       <button
         onClick={() => onToggleBookMark(id)}
         className={getIconClasses(status)}
       />
-    </div>
+    </>
   );
 };
 
