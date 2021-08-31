@@ -1,12 +1,6 @@
 import React from "react";
 
 const SearchStatus = ({ length }) => {
-  const getBadgeClasses = () => {
-    let classes = "badge bg-";
-    classes += length === 0 ? "danger" : "primary";
-    return classes;
-  };
-
   const renderPhrase = (number) => {
     const exceptions = ["2", "3", "4"];
     return exceptions.includes(number.toString().substr(-1, 1)) &&
@@ -22,7 +16,9 @@ const SearchStatus = ({ length }) => {
   };
   return (
     <h2>
-      <span className={getBadgeClasses()}>{getHeaderText()}</span>
+      <span className={"badge bg-" + (length === 0 ? "danger" : "primary")}>
+        {getHeaderText()}
+      </span>
     </h2>
   );
 };

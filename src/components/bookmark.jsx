@@ -1,21 +1,10 @@
 import React from "react";
 
-const BookMark = ({ status, onToggleBookMark, id }) => {
-  const getIconClasses = (userStatus) => {
-    let classes = "btn-sm bi bi-bookmark";
-    if (userStatus) {
-      classes += "-heart-fill";
-    }
-    return classes;
-  };
-
+const BookMark = ({ status, ...rest }) => {
   return (
-    <>
-      <button
-        onClick={() => onToggleBookMark(id)}
-        className={getIconClasses(status)}
-      />
-    </>
+    <button {...rest}>
+      <i className={"bi bi-bookmark" + (status ? "-heart-fill" : "")} />
+    </button>
   );
 };
 
