@@ -17,7 +17,9 @@ const User = ({
     <tr key={_id}>
       <th scope="row">{name}</th>
       <td>
-        <Qualitie qualities={qualities} />
+        {qualities.map((quality) => (
+          <Qualitie key={quality._id} {...quality} />
+        ))}
       </td>
       <td>{profession.name}</td>
       <td>{completedMeetings}</td>
