@@ -48,7 +48,7 @@ User.propTypes = {
     rate: PropTypes.number.isRequired,
     _id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    status: PropTypes.any,
+    status: PropTypes.bool,
     qualities: PropTypes.array.isRequired,
     profession: PropTypes.object.isRequired,
     onDelete: PropTypes.func.isRequired,

@@ -9,7 +9,6 @@ const Users = ({ users: allUsers, ...rest }) => {
     const count = allUsers.length;
     const pageSize = 4;
     const handlePageChange = (pageIndex) => {
-        console.log("page:", pageIndex);
         setCurrentPage(pageIndex);
     };
 

@@ -10,7 +10,7 @@ const BookMark = ({ status, ...rest }) => {
 };
 
 BookMark.propTypes = {
-    status: PropTypes.any
+    status: PropTypes.bool
 };
 
 export default BookMark;
